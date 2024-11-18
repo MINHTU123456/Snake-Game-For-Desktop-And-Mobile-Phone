@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Snake Game</h1>
+    <button id="playGameBtn" class="button">Play Game</button>
+    <button id="menuBtn" class="button">Menu</button>
+
+    <!-- Menu -->
+    <div id="menu" class="menu hidden">
+      <h2>Settings</h2>
+      <label for="volume">Game Volume</label>
+      <input type="range" id="volume" min="0" max="100" value="50">
+      <label for="resolution">Game Resolution</label>
+      <select id="resolution">
+        <option value="800x600">800 x 600</option>
+        <option value="1024x768">1024 x 768</option>
+        <option value="1920x1080">1920 x 1080</option>
+      </select>
+      <button id="closeMenuBtn" class="button">Close Menu</button>
+    </div>
+
+    <!-- Game -->
+    <div id="game" class="game hidden">
+      <canvas id="gameCanvas"></canvas>
+      <p id="score">Score: 0</p>
+      
+      <!-- Điều khiển cảm ứng -->
+      <div class="controls">
+        <button class="control-button" id="upBtn">▲</button>
+        <div>
+          <button class="control-button" id="leftBtn">◀</button>
+          <button class="control-button" id="rightBtn">▶</button>
+        </div>
+        <button class="control-button" id="downBtn">▼</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Designed with ❤ by Minh Tú
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

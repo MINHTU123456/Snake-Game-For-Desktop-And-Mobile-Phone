@@ -1,0 +1,134 @@
+/* Toàn bộ giao diện */
+body {
+  margin: 0;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: #7ad347;
+  color: #ffffff;
+}
+
+.menu, .game {
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+canvas {
+  background-color: #000000;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+/* Điều khiển cảm ứng */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.controls > div {
+  display: flex;
+  justify-content: center;
+}
+
+.control-button {
+  background-color: #ffffff;
+  color: #121212;
+  border: none;
+  border-radius: 25px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.control-button:hover {
+  background-color: #7ad347;
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  canvas {
+    height: 300px;
+    width: 100%;
+  }
+
+  .control-button {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+  }
+
+  .button {
+    font-size: 0.8em;
+    padding: 6px 12px;
+  }
+}
